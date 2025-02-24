@@ -8,7 +8,7 @@ function App() {
       // bgGradient="to-r"
       // gradientFrom="purple.800"
       // gradientTo="purple.500"
-      backgroundImage="url(https://4kwallpapers.com/images/wallpapers/outrun-neon-dark-background-purple-3440x1440-4523.jpg)"
+      backgroundImage="url(https://img.freepik.com/premium-photo/coding-night-focused-programmer-working-project-silhouette-programmer-working-l_924727-71700.jpg)"
       bgSize="cover"
     >
       <Dashboard />
