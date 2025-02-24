@@ -19,12 +19,12 @@ function SideBar({ menu }) {
           {menu.map((item) => (
             <Link
               href={item.href}
-              bg="rgb(255, 255, 255,0.1)"
               p={4}
               width="100%"
               backdropFilter="blur(25px)"
               borderRadius={10}
               _hover={{ bg: "rgb(255, 255, 255,0.2)" }}
+              _focus={{ bg: "pink.700" }}
               mt={5}
             >
               {item.icon}
