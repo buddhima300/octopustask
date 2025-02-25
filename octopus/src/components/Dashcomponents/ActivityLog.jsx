@@ -29,6 +29,7 @@ function ActivityLog({ actData }) {
             bg="whiteAlpha.200"
             py={2}
             borderRadius={10}
+            _hover={{ bg: "whiteAlpha.300" }}
           >
             <Box display="flex" flexDirection="row" gap={2}>
               <CalendarClock size={24} color="white" />

@@ -9,7 +9,8 @@ function App() {
       // bgGradient="to-r"
       // gradientFrom="purple.800"
       // gradientTo="purple.500"
-      backgroundImage="url(https://img.freepik.com/premium-photo/coding-night-focused-programmer-working-project-silhouette-programmer-working-l_924727-71700.jpg)"
+      // backgroundImage="url(https://img.freepik.com/premium-photo/coding-night-focused-programmer-working-project-silhouette-programmer-working-l_924727-71700.jpg)"
+      backgroundImage="url(https://applescoop.org/image/wallpapers/iphone/purple-abstract-patterns-ultra-hd-4k-trending-iphone-16-top-iphone-16-free-pro-iphone-16-plus-and-iphone-16-pro-max-22-10-2024-1729663230-hd-wallpaper.jpg)"
       bgSize="cover"
     >
       <Dashboard />

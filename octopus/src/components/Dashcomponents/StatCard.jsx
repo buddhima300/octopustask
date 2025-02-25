@@ -21,8 +21,8 @@ function StatCard({ statData }) {
           pt={5}
           borderRadius="md"
           backdropFilter="blur(25px)"
-          boxShadow="lg"
-          _hover={{ boxShadow: "sm", transform: "scale(1.05)" }}
+          boxShadow="2xl"
+          _hover={{ boxShadow: "lg", transform: "scale(1.05)" }}
         >
           <Text color="whiteAlpha.500" fontWeight="medium">
             {item.topic}

@@ -12,18 +12,30 @@ function DistributionChart({ data }) {
       pt={5}
       mt={10}
       borderRadius="md"
-      backdropFilter="blur(25px)"
-      boxShadow="lg"
+      backdropFilter="blur(45px)"
+      boxShadow="2xl"
       _hover={{ boxShadow: "lg" }}
     >
       <Text fontSize="xl" fontWeight="bold" color="white">
         User Distribution
       </Text>
-      <Text fontSize="2xl" fontWeight="light" color="lightgreen" mt={2}>
-        Total
+
+      <Text fontSize="sm" fontWeight="bold" color="whiteAlpha.700">
+        {data &&
+          data.map((item, index) => (
+            <ul key={index}>
+              <Text color={item.fill}>
+                {item.type} | {item.uv}{" "}
+              </Text>
+            </ul>
+          ))}
       </Text>
-      <Text fontSize="6xl" fontWeight="bold" color="whiteAlpha.700">
-        {Total} Users
+
+      {/* <Text fontSize="2xl" fontWeight="light" color="lightgreen" mt={2}>
+        Total
+      </Text> */}
+      <Text fontSize="6xl" fontWeight="bold" color="#73EC8B">
+        {Total}
       </Text>
 
       {/* Radial bar chart for user distribution */}
@@ -53,7 +65,6 @@ function DistributionChart({ data }) {
         />
         <Tooltip />
       </RadialBarChart>
-      {/* adding additional stats */}
     </Box>
   );
 }
