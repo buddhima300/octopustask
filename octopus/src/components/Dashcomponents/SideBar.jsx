@@ -6,7 +6,7 @@ function SideBar({ menu }) {
     <div>
       <Box
         width={400}
-        height="100vh"
+        height="100%"
         borderRadius="md"
         boxShadow="md"
         backdropFilter={"blur(15px)"}
@@ -24,7 +24,7 @@ function SideBar({ menu }) {
               backdropFilter="blur(25px)"
               borderRadius={10}
               _hover={{ bg: "rgb(255, 255, 255,0.2)" }}
-              _focus={{ bg: "pink.700" }}
+              _focus={{ bg: "#54C392" }}
               mt={5}
             >
               {item.icon}

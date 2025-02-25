@@ -43,7 +43,7 @@ export const statData = [
   },
   {
     topic: "Monthly Active users",
-    value: "1,051",
+    value: "10,022",
     date: "Feb 2025",
     status: "+8.5%",
   },

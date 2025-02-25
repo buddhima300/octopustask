@@ -41,7 +41,8 @@ function StatGraph({ chartData }) {
       gap={5}
     >
       <Box
-        w="50%"
+        // w="50%"
+        pr={5}
         h={500}
         pl={5}
         pt={5}
