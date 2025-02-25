@@ -12,14 +12,18 @@ import ActivityLog from "../components/Dashcomponents/ActivityLog";
 
 function Dashboard() {
   return (
-    <Box h="100%" direction="row" display="flex">
+    <Box h="100%" direction={{ base: "column", md: "row" }} display="flex">
       <SideBar menu={menu} />
 
       {/* content of the dashboard */}
       <Box display="flex" h="auto" flexDirection="column">
         <StatCard statData={statData} />
         {/* charts components */}
-        <Box display="flex" h="full" flexDirection="row">
+        <Box
+          display="flex"
+          h="full"
+          flexDirection={{ base: "column", md: "row" }}
+        >
           <Box flex="max-content" mr="4">
             <StatGraph chartData={lineChart} />
           </Box>

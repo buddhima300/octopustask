@@ -3,14 +3,15 @@ import React from "react";
 import { Legend, RadialBar, RadialBarChart } from "recharts";
 
 function DistributionChart({ data }) {
-  const Total = data[0].uv + data[1].uv + data[2].uv;
+  // const Total = data[0].uv + data[1].uv + data[2].uv;
   return (
     <Box
-      w="100%"
+      w="auto"
       h="auto"
       pl={5}
       pt={5}
       mt={10}
+      ml={{ base: 10, md: 10 }}
       borderRadius="md"
       backdropFilter="blur(45px)"
       boxShadow="2xl"
@@ -34,9 +35,9 @@ function DistributionChart({ data }) {
       {/* <Text fontSize="2xl" fontWeight="light" color="lightgreen" mt={2}>
         Total
       </Text> */}
-      <Text fontSize="6xl" fontWeight="bold" color="#73EC8B">
+      {/* <Text fontSize="6xl" fontWeight="bold" color="#ccc">
         {Total}
-      </Text>
+      </Text> */}
 
       {/* Radial bar chart for user distribution */}
       <RadialBarChart

@@ -5,29 +5,34 @@ function StatCard({ statData }) {
   return (
     <Box
       w="100%"
-      mt={10}
-      ml={10}
+      mt={{ base: 5, md: 10 }}
+      ml={{ base: "80px", md: "10" }}
       display="flex"
-      flexDirection="row"
+      flexDirection={{ base: "column", md: "row" }}
       justifyContent="space-around"
-      gap={5}
+      // gap={{ base: 2, md: 5 }}
     >
       {statData.map((item) => (
         <Box
           key={item.topic}
-          w="35%"
-          h={200}
+          w={{ base: "80%", md: "45%", lg: "30%" }}
+          h={{ base: 200, md: 200 }}
           pl={5}
           pt={5}
           borderRadius="md"
           backdropFilter="blur(25px)"
           boxShadow="2xl"
           _hover={{ boxShadow: "lg", transform: "scale(1.05)" }}
+          mb={{ base: 4, md: 0 }}
         >
           <Text color="whiteAlpha.500" fontWeight="medium">
             {item.topic}
           </Text>
-          <Text color="white" fontSize="6xl" fontWeight="bold">
+          <Text
+            color="white"
+            fontSize={{ base: "4xl", md: "6xl" }}
+            fontWeight="bold"
+          >
             {item.value}
           </Text>
           <Box

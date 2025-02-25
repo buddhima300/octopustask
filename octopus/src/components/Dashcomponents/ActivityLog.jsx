@@ -11,7 +11,7 @@ function ActivityLog({ actData }) {
       backdropFilter="blur(25px)"
       borderRadius="md"
       boxShadow="lg"
-      ml={10}
+      mx={{ base: 5, md: 10 }}
       my={10}
     >
       <Text fontSize="xl" fontWeight="bold" color="white" ml={5} mb={5}>
