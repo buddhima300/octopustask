@@ -15,14 +15,14 @@ function StatCard({ statData }) {
       {statData.map((item) => (
         <Box
           key={item.topic}
-          w={400}
+          w="35%"
           h={200}
           pl={5}
           pt={5}
           borderRadius="md"
           backdropFilter="blur(25px)"
           boxShadow="lg"
-          _hover={{ boxShadow: "lg", transform: "scale(1.05)" }}
+          _hover={{ boxShadow: "sm", transform: "scale(1.05)" }}
         >
           <Text color="whiteAlpha.500" fontWeight="medium">
             {item.topic}

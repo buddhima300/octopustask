@@ -5,7 +5,7 @@ import { Legend, RadialBar, RadialBarChart } from "recharts";
 function DistributionChart({ data }) {
   return (
     <Box
-      w="80%"
+      w="100%"
       h={500}
       pl={5}
       pt={5}

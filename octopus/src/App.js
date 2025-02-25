@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 function App() {
   return (
     <Box
+      w="100%"
       bgBlendMode="hard-light"
       // bgGradient="to-r"
       // gradientFrom="purple.800"
