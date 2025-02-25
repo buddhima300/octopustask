@@ -2,7 +2,6 @@ import { Box, Text } from "@chakra-ui/react";
 import React from "react";
 
 function StatCard({ statData }) {
-  console.log(statData);
   return (
     <Box
       w="100%"
@@ -15,6 +14,7 @@ function StatCard({ statData }) {
     >
       {statData.map((item) => (
         <Box
+          key={item.topic}
           w={400}
           h={200}
           pl={5}
